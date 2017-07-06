@@ -28,9 +28,6 @@ IOS10中有新的推送`ServiceExtension`在推送来的时候可以进行语音
  ### 使用例子
  ```Objective-C
  NSMutableArray * amoutArr = [SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(10.99f)]];
-    [amoutArr insertObject:@"卡券宝为您收款" atIndex:0];
-    [amoutArr addObject:@"已优惠"];
-    [amoutArr addObjectsFromArray:[SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(9.9f)]]];
     [SpeechTool combinationAudio:amoutArr syntheticComplete:^(NSString *audioPath) {
         //播放出来,AVAudioPlayer 必须要设置成为属性
         NSLog(@"%@",audioPath);
