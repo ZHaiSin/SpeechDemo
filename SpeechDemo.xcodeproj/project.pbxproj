@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3683EDDE1F0DF14900460784 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EDDD1F0DF14900460784 /* main.m */; };
+		3683EDE11F0DF14900460784 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EDE01F0DF14900460784 /* AppDelegate.m */; };
+		3683EDE41F0DF14900460784 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EDE31F0DF14900460784 /* ViewController.m */; };
+		3683EDE71F0DF14900460784 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3683EDE51F0DF14900460784 /* Main.storyboard */; };
+		3683EDE91F0DF14900460784 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3683EDE81F0DF14900460784 /* Assets.xcassets */; };
+		3683EDEC1F0DF14900460784 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3683EDEA1F0DF14900460784 /* LaunchScreen.storyboard */; };
+		3683EE061F0DF1D000460784 /* SpeechTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EE051F0DF1D000460784 /* SpeechTool.m */; };
+		3683EE281F0DF51600460784 /* NotificationService.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EE271F0DF51600460784 /* NotificationService.m */; };
+		3683EE2C1F0DF51600460784 /* SpeechServiceExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 3683EE241F0DF51600460784 /* SpeechServiceExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		3683EE301F0DF55800460784 /* SpeechTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 3683EE051F0DF1D000460784 /* SpeechTool.m */; };
+		3683EE451F0DF57000460784 /* dian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE321F0DF57000460784 /* dian.mp3 */; };
+		3683EE461F0DF57000460784 /* dian.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE321F0DF57000460784 /* dian.mp3 */; };
+		3683EE491F0DF57000460784 /* eight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE341F0DF57000460784 /* eight.mp3 */; };
+		3683EE4A1F0DF57000460784 /* eight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE341F0DF57000460784 /* eight.mp3 */; };
+		3683EE4B1F0DF57000460784 /* five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE351F0DF57000460784 /* five.mp3 */; };
+		3683EE4C1F0DF57000460784 /* five.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE351F0DF57000460784 /* five.mp3 */; };
+		3683EE4D1F0DF57000460784 /* four.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE361F0DF57000460784 /* four.mp3 */; };
+		3683EE4E1F0DF57000460784 /* four.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE361F0DF57000460784 /* four.mp3 */; };
+		3683EE4F1F0DF57000460784 /* hundred.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE371F0DF57000460784 /* hundred.mp3 */; };
+		3683EE501F0DF57000460784 /* hundred.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE371F0DF57000460784 /* hundred.mp3 */; };
+		3683EE511F0DF57000460784 /* million.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE381F0DF57000460784 /* million.mp3 */; };
+		3683EE521F0DF57000460784 /* million.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE381F0DF57000460784 /* million.mp3 */; };
+		3683EE531F0DF57000460784 /* nine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE391F0DF57000460784 /* nine.mp3 */; };
+		3683EE541F0DF57000460784 /* nine.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE391F0DF57000460784 /* nine.mp3 */; };
+		3683EE551F0DF57000460784 /* one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3A1F0DF57000460784 /* one.mp3 */; };
+		3683EE561F0DF57000460784 /* one.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3A1F0DF57000460784 /* one.mp3 */; };
+		3683EE571F0DF57000460784 /* seven.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3B1F0DF57000460784 /* seven.mp3 */; };
+		3683EE581F0DF57000460784 /* seven.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3B1F0DF57000460784 /* seven.mp3 */; };
+		3683EE591F0DF57000460784 /* six.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3C1F0DF57000460784 /* six.mp3 */; };
+		3683EE5A1F0DF57000460784 /* six.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3C1F0DF57000460784 /* six.mp3 */; };
+		3683EE5B1F0DF57000460784 /* ten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3D1F0DF57000460784 /* ten.mp3 */; };
+		3683EE5C1F0DF57000460784 /* ten.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3D1F0DF57000460784 /* ten.mp3 */; };
+		3683EE5D1F0DF57000460784 /* thousand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3E1F0DF57000460784 /* thousand.mp3 */; };
+		3683EE5E1F0DF57000460784 /* thousand.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3E1F0DF57000460784 /* thousand.mp3 */; };
+		3683EE5F1F0DF57000460784 /* three.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3F1F0DF57000460784 /* three.mp3 */; };
+		3683EE601F0DF57000460784 /* three.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE3F1F0DF57000460784 /* three.mp3 */; };
+		3683EE611F0DF57000460784 /* two.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE401F0DF57000460784 /* two.mp3 */; };
+		3683EE621F0DF57000460784 /* two.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE401F0DF57000460784 /* two.mp3 */; };
+		3683EE631F0DF57000460784 /* yuan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE411F0DF57000460784 /* yuan.mp3 */; };
+		3683EE641F0DF57000460784 /* yuan.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE411F0DF57000460784 /* yuan.mp3 */; };
+		3683EE651F0DF57000460784 /* zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE421F0DF57000460784 /* zero.mp3 */; };
+		3683EE661F0DF57000460784 /* zero.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE421F0DF57000460784 /* zero.mp3 */; };
+		3683EE671F0DF57000460784 /* 两.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE431F0DF57000460784 /* 两.mp3 */; };
+		3683EE681F0DF57000460784 /* 两.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 3683EE431F0DF57000460784 /* 两.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3683EE2A1F0DF51600460784 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3683EDD11F0DF14900460784 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3683EE231F0DF51600460784;
+			remoteInfo = SpeechServiceExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3683EE031F0DF17500460784 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				3683EE2C1F0DF51600460784 /* SpeechServiceExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3683EDD91F0DF14900460784 /* SpeechDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeechDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3683EDDD1F0DF14900460784 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3683EDDF1F0DF14900460784 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		3683EDE01F0DF14900460784 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3683EDE21F0DF14900460784 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		3683EDE31F0DF14900460784 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		3683EDE61F0DF14900460784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3683EDE81F0DF14900460784 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3683EDEB1F0DF14900460784 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3683EDED1F0DF14900460784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3683EE041F0DF1D000460784 /* SpeechTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpeechTool.h; sourceTree = "<group>"; };
+		3683EE051F0DF1D000460784 /* SpeechTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpeechTool.m; sourceTree = "<group>"; };
+		3683EE241F0DF51600460784 /* SpeechServiceExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SpeechServiceExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		3683EE261F0DF51600460784 /* NotificationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationService.h; sourceTree = "<group>"; };
+		3683EE271F0DF51600460784 /* NotificationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationService.m; sourceTree = "<group>"; };
+		3683EE291F0DF51600460784 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3683EE321F0DF57000460784 /* dian.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = dian.mp3; sourceTree = "<group>"; };
+		3683EE341F0DF57000460784 /* eight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = eight.mp3; sourceTree = "<group>"; };
+		3683EE351F0DF57000460784 /* five.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = five.mp3; sourceTree = "<group>"; };
+		3683EE361F0DF57000460784 /* four.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = four.mp3; sourceTree = "<group>"; };
+		3683EE371F0DF57000460784 /* hundred.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = hundred.mp3; sourceTree = "<group>"; };
+		3683EE381F0DF57000460784 /* million.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = million.mp3; sourceTree = "<group>"; };
+		3683EE391F0DF57000460784 /* nine.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = nine.mp3; sourceTree = "<group>"; };
+		3683EE3A1F0DF57000460784 /* one.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = one.mp3; sourceTree = "<group>"; };
+		3683EE3B1F0DF57000460784 /* seven.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = seven.mp3; sourceTree = "<group>"; };
+		3683EE3C1F0DF57000460784 /* six.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = six.mp3; sourceTree = "<group>"; };
+		3683EE3D1F0DF57000460784 /* ten.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ten.mp3; sourceTree = "<group>"; };
+		3683EE3E1F0DF57000460784 /* thousand.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = thousand.mp3; sourceTree = "<group>"; };
+		3683EE3F1F0DF57000460784 /* three.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = three.mp3; sourceTree = "<group>"; };
+		3683EE401F0DF57000460784 /* two.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = two.mp3; sourceTree = "<group>"; };
+		3683EE411F0DF57000460784 /* yuan.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yuan.mp3; sourceTree = "<group>"; };
+		3683EE421F0DF57000460784 /* zero.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = zero.mp3; sourceTree = "<group>"; };
+		3683EE431F0DF57000460784 /* 两.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "两.mp3"; sourceTree = "<group>"; };
+		3683EE6B1F0DF75A00460784 /* SpeechDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SpeechDemo.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3683EDD61F0DF14900460784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3683EE211F0DF51600460784 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3683EDD01F0DF14900460784 = {
+			isa = PBXGroup;
+			children = (
+				3683EDDB1F0DF14900460784 /* SpeechDemo */,
+				3683EE251F0DF51600460784 /* SpeechServiceExtension */,
+				3683EDDA1F0DF14900460784 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3683EDDA1F0DF14900460784 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3683EDD91F0DF14900460784 /* SpeechDemo.app */,
+				3683EE241F0DF51600460784 /* SpeechServiceExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3683EDDB1F0DF14900460784 /* SpeechDemo */ = {
+			isa = PBXGroup;
+			children = (
+				3683EE6B1F0DF75A00460784 /* SpeechDemo.entitlements */,
+				3683EDDF1F0DF14900460784 /* AppDelegate.h */,
+				3683EDE01F0DF14900460784 /* AppDelegate.m */,
+				3683EDE21F0DF14900460784 /* ViewController.h */,
+				3683EDE31F0DF14900460784 /* ViewController.m */,
+				3683EE041F0DF1D000460784 /* SpeechTool.h */,
+				3683EE051F0DF1D000460784 /* SpeechTool.m */,
+				3683EE311F0DF57000460784 /* raw */,
+				3683EDE51F0DF14900460784 /* Main.storyboard */,
+				3683EDE81F0DF14900460784 /* Assets.xcassets */,
+				3683EDEA1F0DF14900460784 /* LaunchScreen.storyboard */,
+				3683EDED1F0DF14900460784 /* Info.plist */,
+				3683EDDC1F0DF14900460784 /* Supporting Files */,
+			);
+			path = SpeechDemo;
+			sourceTree = "<group>";
+		};
+		3683EDDC1F0DF14900460784 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3683EDDD1F0DF14900460784 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3683EE251F0DF51600460784 /* SpeechServiceExtension */ = {
+			isa = PBXGroup;
+			children = (
+				3683EE261F0DF51600460784 /* NotificationService.h */,
+				3683EE271F0DF51600460784 /* NotificationService.m */,
+				3683EE291F0DF51600460784 /* Info.plist */,
+			);
+			path = SpeechServiceExtension;
+			sourceTree = "<group>";
+		};
+		3683EE311F0DF57000460784 /* raw */ = {
+			isa = PBXGroup;
+			children = (
+				3683EE321F0DF57000460784 /* dian.mp3 */,
+				3683EE341F0DF57000460784 /* eight.mp3 */,
+				3683EE351F0DF57000460784 /* five.mp3 */,
+				3683EE361F0DF57000460784 /* four.mp3 */,
+				3683EE371F0DF57000460784 /* hundred.mp3 */,
+				3683EE381F0DF57000460784 /* million.mp3 */,
+				3683EE391F0DF57000460784 /* nine.mp3 */,
+				3683EE3A1F0DF57000460784 /* one.mp3 */,
+				3683EE3B1F0DF57000460784 /* seven.mp3 */,
+				3683EE3C1F0DF57000460784 /* six.mp3 */,
+				3683EE3D1F0DF57000460784 /* ten.mp3 */,
+				3683EE3E1F0DF57000460784 /* thousand.mp3 */,
+				3683EE3F1F0DF57000460784 /* three.mp3 */,
+				3683EE401F0DF57000460784 /* two.mp3 */,
+				3683EE411F0DF57000460784 /* yuan.mp3 */,
+				3683EE421F0DF57000460784 /* zero.mp3 */,
+				3683EE431F0DF57000460784 /* 两.mp3 */,
+			);
+			path = raw;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3683EDD81F0DF14900460784 /* SpeechDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3683EDF01F0DF14900460784 /* Build configuration list for PBXNativeTarget "SpeechDemo" */;
+			buildPhases = (
+				3683EDD51F0DF14900460784 /* Sources */,
+				3683EDD61F0DF14900460784 /* Frameworks */,
+				3683EDD71F0DF14900460784 /* Resources */,
+				3683EE031F0DF17500460784 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3683EE2B1F0DF51600460784 /* PBXTargetDependency */,
+			);
+			name = SpeechDemo;
+			productName = SpeechDemo;
+			productReference = 3683EDD91F0DF14900460784 /* SpeechDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3683EE231F0DF51600460784 /* SpeechServiceExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3683EE2D1F0DF51600460784 /* Build configuration list for PBXNativeTarget "SpeechServiceExtension" */;
+			buildPhases = (
+				3683EE201F0DF51600460784 /* Sources */,
+				3683EE211F0DF51600460784 /* Frameworks */,
+				3683EE221F0DF51600460784 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeechServiceExtension;
+			productName = SpeechServiceExtension;
+			productReference = 3683EE241F0DF51600460784 /* SpeechServiceExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3683EDD11F0DF14900460784 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = X;
+				TargetAttributes = {
+					3683EDD81F0DF14900460784 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					3683EE231F0DF51600460784 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 3683EDD41F0DF14900460784 /* Build configuration list for PBXProject "SpeechDemo" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3683EDD01F0DF14900460784;
+			productRefGroup = 3683EDDA1F0DF14900460784 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3683EDD81F0DF14900460784 /* SpeechDemo */,
+				3683EE231F0DF51600460784 /* SpeechServiceExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3683EDD71F0DF14900460784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683EE5D1F0DF57000460784 /* thousand.mp3 in Resources */,
+				3683EE5F1F0DF57000460784 /* three.mp3 in Resources */,
+				3683EE5B1F0DF57000460784 /* ten.mp3 in Resources */,
+				3683EDEC1F0DF14900460784 /* LaunchScreen.storyboard in Resources */,
+				3683EE591F0DF57000460784 /* six.mp3 in Resources */,
+				3683EE511F0DF57000460784 /* million.mp3 in Resources */,
+				3683EE671F0DF57000460784 /* 两.mp3 in Resources */,
+				3683EE651F0DF57000460784 /* zero.mp3 in Resources */,
+				3683EDE91F0DF14900460784 /* Assets.xcassets in Resources */,
+				3683EE551F0DF57000460784 /* one.mp3 in Resources */,
+				3683EE4D1F0DF57000460784 /* four.mp3 in Resources */,
+				3683EE491F0DF57000460784 /* eight.mp3 in Resources */,
+				3683EE571F0DF57000460784 /* seven.mp3 in Resources */,
+				3683EE451F0DF57000460784 /* dian.mp3 in Resources */,
+				3683EE531F0DF57000460784 /* nine.mp3 in Resources */,
+				3683EDE71F0DF14900460784 /* Main.storyboard in Resources */,
+				3683EE611F0DF57000460784 /* two.mp3 in Resources */,
+				3683EE4B1F0DF57000460784 /* five.mp3 in Resources */,
+				3683EE631F0DF57000460784 /* yuan.mp3 in Resources */,
+				3683EE4F1F0DF57000460784 /* hundred.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3683EE221F0DF51600460784 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683EE5C1F0DF57000460784 /* ten.mp3 in Resources */,
+				3683EE541F0DF57000460784 /* nine.mp3 in Resources */,
+				3683EE661F0DF57000460784 /* zero.mp3 in Resources */,
+				3683EE4C1F0DF57000460784 /* five.mp3 in Resources */,
+				3683EE641F0DF57000460784 /* yuan.mp3 in Resources */,
+				3683EE621F0DF57000460784 /* two.mp3 in Resources */,
+				3683EE4E1F0DF57000460784 /* four.mp3 in Resources */,
+				3683EE5A1F0DF57000460784 /* six.mp3 in Resources */,
+				3683EE461F0DF57000460784 /* dian.mp3 in Resources */,
+				3683EE681F0DF57000460784 /* 两.mp3 in Resources */,
+				3683EE581F0DF57000460784 /* seven.mp3 in Resources */,
+				3683EE521F0DF57000460784 /* million.mp3 in Resources */,
+				3683EE5E1F0DF57000460784 /* thousand.mp3 in Resources */,
+				3683EE561F0DF57000460784 /* one.mp3 in Resources */,
+				3683EE4A1F0DF57000460784 /* eight.mp3 in Resources */,
+				3683EE501F0DF57000460784 /* hundred.mp3 in Resources */,
+				3683EE601F0DF57000460784 /* three.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3683EDD51F0DF14900460784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683EDE41F0DF14900460784 /* ViewController.m in Sources */,
+				3683EE061F0DF1D000460784 /* SpeechTool.m in Sources */,
+				3683EDE11F0DF14900460784 /* AppDelegate.m in Sources */,
+				3683EDDE1F0DF14900460784 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3683EE201F0DF51600460784 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3683EE281F0DF51600460784 /* NotificationService.m in Sources */,
+				3683EE301F0DF55800460784 /* SpeechTool.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3683EE2B1F0DF51600460784 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3683EE231F0DF51600460784 /* SpeechServiceExtension */;
+			targetProxy = 3683EE2A1F0DF51600460784 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3683EDE51F0DF14900460784 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3683EDE61F0DF14900460784 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3683EDEA1F0DF14900460784 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3683EDEB1F0DF14900460784 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3683EDEE1F0DF14900460784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3683EDEF1F0DF14900460784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3683EDF11F0DF14900460784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpeechDemo/SpeechDemo.entitlements;
+				DEVELOPMENT_TEAM = B4692WE69H;
+				INFOPLIST_FILE = SpeechDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wecool.card1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3683EDF21F0DF14900460784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = SpeechDemo/SpeechDemo.entitlements;
+				DEVELOPMENT_TEAM = B4692WE69H;
+				INFOPLIST_FILE = SpeechDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wecool.card1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		3683EE2E1F0DF51600460784 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B4692WE69H;
+				INFOPLIST_FILE = SpeechServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wecool.card1.SpeechServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3683EE2F1F0DF51600460784 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = B4692WE69H;
+				INFOPLIST_FILE = SpeechServiceExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cn.wecool.card1.SpeechServiceExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3683EDD41F0DF14900460784 /* Build configuration list for PBXProject "SpeechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3683EDEE1F0DF14900460784 /* Debug */,
+				3683EDEF1F0DF14900460784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3683EDF01F0DF14900460784 /* Build configuration list for PBXNativeTarget "SpeechDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3683EDF11F0DF14900460784 /* Debug */,
+				3683EDF21F0DF14900460784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3683EE2D1F0DF51600460784 /* Build configuration list for PBXNativeTarget "SpeechServiceExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3683EE2E1F0DF51600460784 /* Debug */,
+				3683EE2F1F0DF51600460784 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3683EDD11F0DF14900460784 /* Project object */;
+}
