@@ -25,5 +25,21 @@ IOS10中有新的推送`ServiceExtension`在推送来的时候可以进行语音
  **/
 + (void)combinationAudio:(NSArray *)stringArr syntheticComplete:(syntheticComplete)complete;
  ```
+ ### 使用例子
+ ```Objective-C
+ NSMutableArray * amoutArr = [SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(10.99f)]];
+    [amoutArr insertObject:@"卡券宝为您收款" atIndex:0];
+    [amoutArr addObject:@"已优惠"];
+    [amoutArr addObjectsFromArray:[SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(9.9f)]]];
+    [SpeechTool combinationAudio:amoutArr syntheticComplete:^(NSString *audioPath) {
+        //播放出来,AVAudioPlayer 必须要设置成为属性
+        NSLog(@"%@",audioPath);
+        _movePlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:audioPath] error:nil];
+        _movePlayer.delegate = self;
+        [_movePlayer prepareToPlay];
+        [_movePlayer play];
+    }];
+ ```
+ 
 只能识别到10万元以下,目前来看应该不会超过10万元的。。<br>
 我的QQ897864841.如果不懂可以来问我(里面我有写的注释,应该不是很难理解)
