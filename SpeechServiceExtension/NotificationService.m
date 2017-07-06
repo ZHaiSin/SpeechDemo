@@ -24,12 +24,8 @@
     // Modify the notification content here...
     self.bestAttemptContent.title = [NSString stringWithFormat:@"%@ [modified]", self.bestAttemptContent.title];
     self.bestAttemptContent.sound = nil;
-    NSLog(@"收到推送");
     //最多支持到99999.99元 估计也不会有这么多的。。。
     NSMutableArray * amoutArr = [SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(10.99f)]];
-    [amoutArr insertObject:@"卡券宝为您收款" atIndex:0];
-    [amoutArr addObject:@"已优惠"];
-    [amoutArr addObjectsFromArray:[SpeechTool combinationString:[NSString stringWithFormat:@"%@",@(9.9f)]]];
     [SpeechTool combinationAudio:amoutArr syntheticComplete:^(NSString *audioPath) {
         //播放出来,AVAudioPlayer 必须要设置成为属性
         NSLog(@"%@",audioPath);
