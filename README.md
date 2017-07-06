@@ -5,7 +5,22 @@ IOS10中有新的推送`ServiceExtension`在推送来的时候可以进行语音
 所以换了一种方法,在收到推送的时候进行语音文件的拼接,然后进行播放<br>
 `本地推送是无效的`,只有在远程推送才会有效果,安利一个推送测试的工具[Easy APNs Provider](https://itunes.apple.com/cn/app/easy-apns-provider-tui-song/id989622350?mt=12),效果非常棒,再也不用求后台给发推送了,具体使用说明网上很多,自行百度吧.
 本地发送推送是点击Button后会合成文件并且播放<br>
-如果项目无法运行请更换开发者账号,并且更换`Bundle identifier`和`ServiceExtension`的前缀即可
+如果项目无法运行请更换开发者账号,并且更换`Bundle identifier`和`ServiceExtension`的前缀即可<br>
+推送时记得带上`mutable-content`字段
+```
+{
+   "aps":{
+        "alert" : {
+             "title" : "我是主标题！-title",
+              "subtitle" : "我是主标题！-Subtitle",
+              "body" : "Dely,why am i so handsome -body"
+            },
+        "sound" : "default",
+        "mutable-content" : "1",
+    },
+
+}
+```
  ```Objective-C
 /**
  //传入字符串
