@@ -27,4 +27,4 @@ ServiceExtension
 + (void)combinationAudio:(NSArray *)stringArr syntheticComplete:(syntheticComplete)complete;
  ```
 只能识别到10万元以下,目前来看应该不会超过10万元的。。
-我的QQ897864841.如果不懂可以来问我(里面我有�
+我的QQ897864841.如果不懂可以来问我(里面我有写的注释,应该不是很难理解)
