@@ -3,7 +3,9 @@ IOS推送播报金额<br>
 IOS10中有新的推送`ServiceExtension`在推送来的时候可以进行语音播报.<br>
 使用`AVSpeechUtterance`是肯定不行的。<br>
 所以换了一种方法,在收到推送的时候进行语音文件的拼接,然后进行播放<br>
-`本地推送是无效的`,只有在远程推送才会有效果,本地是点击Button后会合成文件并且播放<br>
+`本地推送是无效的`,只有在远程推送才会有效果,安利一个推送测试的工具[Easy APNs Provider](https://itunes.apple.com/cn/app/easy-apns-provider-tui-song/id989622350?mt=12),效果非常棒,再也不用求后台给发推送了,具体使用说明网上很多,自行百度吧.
+
+本地是点击Button后会合成文件并且播放<br>
  ```Objective-C
 /**
  //传入字符串
