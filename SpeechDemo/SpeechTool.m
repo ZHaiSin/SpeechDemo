@@ -41,13 +41,13 @@
             continue;
         }
         if ([stringArr[i] isEqualToString:@"0"]) {
-            if (stringArr.count - 1 == i) {//如果最后一位是0 ,10.XX 元
+            if (stringArr.count - 1 == i) {//如果最后一位是0 ,10.XX元
                 if (stringArr.count == 1) {//如果只有1位数并且是0，  例子 0.XX 元
                     [amountArr addObject:@"0"];
                 }
                 [amountArr addObject:@"元"];//后面加上一个元,后面会替换成点
-            }else if (![[amountArr lastObject] isEqualToString:@"0"]) {//如果是 102的情况 需要一个 一百 “零“ 二元 (如果上一位也是零则不再加零 1002)
-                [amountArr addObject:@"0"];
+            }else if (![[amountArr lastObject] isEqualToString:@"0"] && ![[stringArr lastObject] isEqualToString:@"0"]) {//如果是 102的情况 需要一个 一百 “零“ 二元 (如果上一位也是零则不再加零 1002) 如果是100的话,判断最后一位是否是0,如果是0的话 则是百最后一位不加0
+                    [amountArr addObject:@"0"];
             }
             continue;
         }
